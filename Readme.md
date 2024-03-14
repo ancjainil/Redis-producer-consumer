@@ -7,7 +7,7 @@ This repository contains C++ programs for a Redis queue producer and consumer us
 
 ### Requirements
 
-- C++ compiler (with C++11 support)
+- C++ compiler (with C++14 support)
 - Boost libraries
 - Redis server
 
@@ -73,7 +73,7 @@ It will pop a message from the Redis queue and display it.
 Compile the unit test program:
 
 ```bash
-g++ -std=c++11 -o redis_queue_producer_test redis_queue_producer_test.cpp -lgtest -lgtest_main -pthread
+g++ -std=c++14 -o redis_queue_producer_test redis_queue_producer_test.cpp -lgtest -lgtest_main -pthread
 ```
 
 Run the unit test:
@@ -82,7 +82,4 @@ Run the unit test:
 ./redis_queue_producer_test
 ```
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-```
